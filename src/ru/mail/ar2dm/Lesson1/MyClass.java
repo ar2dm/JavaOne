@@ -36,4 +36,9 @@ public class MyClass {
             System.out.println("Entered number is positive");
         }
     }
+
+    // Метод, возвращающий true, если переданное число отрицательное
+    public static boolean isNegative(int A) {
+        return A < 0;
+    }
 }
