@@ -12,4 +12,9 @@ public class MyClass {
         char c='X';
         String str = "String";
     }
+
+    // Метод, вычисляющий выражение a * (b + (c / d))
+    public static double Calculate(double a, double b, double c, double d) {
+        return a * (b + (c / d));
+    }
 }
