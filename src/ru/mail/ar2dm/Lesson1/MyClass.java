@@ -41,4 +41,9 @@ public class MyClass {
     public static boolean isNegative(int A) {
         return A < 0;
     }
+
+    // Метод sayHello
+    public static void sayHello(String name) {
+        System.out.println("Привет, " + name + "!");
+    }
 }
