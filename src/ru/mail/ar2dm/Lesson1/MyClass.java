@@ -17,4 +17,13 @@ public class MyClass {
     public static double Calculate(double a, double b, double c, double d) {
         return a * (b + (c / d));
     }
+
+    // Метод, проверяющий, что сумма числе лежит в пределах от 10 до 20
+    static boolean check(double A, double B){
+        boolean result = false;
+        if ((A + B) <= 20 && (A + B) > 10){
+            result = true;
+        }
+        return result;
+    }
 }
