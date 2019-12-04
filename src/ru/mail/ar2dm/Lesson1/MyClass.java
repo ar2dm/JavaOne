@@ -19,11 +19,21 @@ public class MyClass {
     }
 
     // Метод, проверяющий, что сумма числе лежит в пределах от 10 до 20
-    static boolean check(double A, double B){
+    public static boolean check(double A, double B){
         boolean result = false;
         if ((A + B) <= 20 && (A + B) > 10){
             result = true;
         }
         return result;
+    }
+
+    // Метод, выводящий в консоль сообщение, положительное число ему передали или отрицательное
+    public static void defineNegative(int A) {
+        boolean res = false;
+        if (A < 0) {
+            System.out.println("Entered number is negative");
+        } else {
+            System.out.println("Entered number is positive");
+        }
     }
 }
