@@ -46,4 +46,9 @@ public class MyClass {
     public static void sayHello(String name) {
         System.out.println("Привет, " + name + "!");
     }
+
+    // Метод, определяющий високосный год или нет
+    public static boolean isLeap(int year) {
+        return (((year % 4 == 0) && !(year % 100 == 0)) || (year % 400 == 0));
+    }
 }
