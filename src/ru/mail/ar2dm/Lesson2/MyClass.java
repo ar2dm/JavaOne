@@ -42,4 +42,24 @@ public class MyClass {
         }
 
     }
+
+    public static boolean checkBalance(int [] arr){
+        int sumLeft = 0, sumRight = 0;
+        boolean check = false;
+        for (int i = 0; i < (arr.length - 1); i++){
+            for (int j = 0; j <= i; j++){
+                sumLeft += arr[j];
+            }
+            for (int j = i +1; j < arr.length; j++){
+                sumRight += arr[j];
+            }
+            check = (sumLeft == sumRight);
+            if (check) {
+                break;
+            }
+            sumLeft = 0;
+            sumRight = 0;
+        }
+        return check;
+    }
 }
