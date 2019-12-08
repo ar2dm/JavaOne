@@ -17,6 +17,12 @@ public class MyClass {
             arr [i] = arr [i-1] + 3;
         }
 
+        int [] arr3 = {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
+        for (int i = 0; i < arr3.length; i++){
+            if (arr3 [i] < 6) {
+                arr3 [i] *= 2;
+            }
+        }
 
     }
 }
