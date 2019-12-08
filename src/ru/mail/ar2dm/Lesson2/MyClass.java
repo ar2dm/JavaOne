@@ -24,5 +24,11 @@ public class MyClass {
             }
         }
 
+        int size = 6;
+        int [][] table = new int[size][size];
+        for (int i = 0; i < size; i++){
+            table[i][i] = table[size - 1 - i][i] = 1;
+        }
+
     }
 }
