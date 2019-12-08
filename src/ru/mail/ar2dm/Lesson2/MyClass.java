@@ -30,5 +30,16 @@ public class MyClass {
             table[i][i] = table[size - 1 - i][i] = 1;
         }
 
+        int [] arr5 = {1, 5, 3, -1, 19, 0, 45, -7, 2, 11, 4, 5, 2, 49, 8, 9, 1, -8};
+        int minElement = arr5[0], maxElement = arr5[0];
+        for (int i = 0; i < arr5.length; i++) {
+            if (maxElement < arr5[i]) {
+                maxElement = arr5[i];
+            }
+            if (minElement > arr5[i]) {
+                minElement = arr5[i];
+            }
+        }
+
     }
 }
